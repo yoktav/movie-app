@@ -16,7 +16,7 @@ class Header extends Component {
             Movie App
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/search">
           <a className={css['c-header__search']} href="/search">
             <svg
               className={css['c-header__icon']}
