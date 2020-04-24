@@ -17,7 +17,12 @@ const MovieCard = ({ id, posterUrl, posterAlt, title, year, type }) => (
         <div className={css['c-movie-card__meta']}>
           {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
           {year} | {type}
-          <a href={`https://www.imdb.com/title/${id}`} className={css['c-movie-card__link']}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={`https://www.imdb.com/title/${id}`}
+            className={css['c-movie-card__link']}
+          >
             imdb
             <svg
               className={css['c-movie-card__icon']}
