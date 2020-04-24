@@ -48,7 +48,7 @@ class Search extends React.Component {
   fetchSearchResults = (updatedPageNo = '', query) => {
     const movieYear = `&y=${query}`;
     const page = updatedPageNo ? `&page=${updatedPageNo}` : '';
-    const searchUrl = `http://www.omdbapi.com/?apikey=7b3dc42b&s=${query}${movieYear}${page}`;
+    const searchUrl = `https://www.omdbapi.com/?apikey=7b3dc42b&s=${query}${movieYear}${page}`;
 
     if (this.cancel) {
       this.cancel.cancel();
