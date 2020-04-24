@@ -4,7 +4,7 @@ import css from './MovieCard.scss';
 import grid from '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 
 // eslint-disable-next-line object-curly-newline
-const ProductCard = ({ id, posterUrl, posterAlt, title, year, type }) => (
+const MovieCard = ({ id, posterUrl, posterAlt, title, year, type }) => (
   <div className={`${grid['col-12']} ${grid['col-md-4']} ${grid['col-lg-3']}`}>
     <div className={css['c-movie-card']} key={id}>
       <div className={css['c-movie-card__image-wrapper']}>
@@ -38,7 +38,7 @@ const ProductCard = ({ id, posterUrl, posterAlt, title, year, type }) => (
   </div>
 );
 
-ProductCard.propTypes = {
+MovieCard.propTypes = {
   id: PropTypes.string,
   posterUrl: PropTypes.string,
   posterAlt: PropTypes.string,
@@ -47,4 +47,4 @@ ProductCard.propTypes = {
   type: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
 };
 
-export default ProductCard;
+export default MovieCard;
