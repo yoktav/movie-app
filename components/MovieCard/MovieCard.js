@@ -39,11 +39,11 @@ const ProductCard = ({ id, posterUrl, posterAlt, title, year, type }) => (
 );
 
 ProductCard.propTypes = {
-  id: PropTypes.number,
+  id: PropTypes.string,
   posterUrl: PropTypes.string,
   posterAlt: PropTypes.string,
   title: PropTypes.string,
-  year: PropTypes.number,
+  year: PropTypes.string,
   type: PropTypes.oneOfType([PropTypes.array, PropTypes.string]),
 };
 
