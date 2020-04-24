@@ -5,7 +5,7 @@ import grid from '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 
 // eslint-disable-next-line object-curly-newline
 const ProductCard = ({ id, posterUrl, posterAlt, title, year, type }) => (
-  <div className={`${grid['col-6']} ${grid['col-md-3']}`}>
+  <div className={`${grid['col-12']} ${grid['col-md-4']} ${grid['col-lg-3']}`}>
     <div className={css['c-movie-card']} key={id}>
       <div className={css['c-movie-card__image-wrapper']}>
         <img className={css['c-movie-card__image']} src={posterUrl} alt={posterAlt} />
