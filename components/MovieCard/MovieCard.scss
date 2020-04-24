@@ -7,6 +7,31 @@
   margin-top: 24px;
   margin-bottom: 24px;
 
+  &.is-loading {
+    position: relative;
+    overflow: hidden;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeholderAnimate;
+    animation-timing-function: linear;
+    background: $color-black;
+    background-image: linear-gradient(
+      to right,
+      $color-black 0%,
+      $color-shark 50%,
+      $color-black 100%
+    );
+    background-size: 1000px;
+
+    &::before {
+      display: block;
+      width: 100%;
+      padding-top: (3 / 2) * 100%;
+      content: '';
+    }
+  }
+
   &:hover {
     .c-movie-card__content {
       transform: translateY(0);
@@ -96,5 +121,14 @@
     margin-top: -5px;
     margin-left: 8px;
     fill: $color-white;
+  }
+}
+
+@keyframes placeholderAnimate {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
   }
 }
