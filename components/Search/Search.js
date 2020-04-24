@@ -131,6 +131,7 @@ class Search extends React.Component {
         <div className={grid.row}>
           {results.map((result) => (
             <MovieCard
+              key={result.imdbID}
               id={result.imdbID}
               posterUrl={result.Poster}
               posterAlt={result.Title}
