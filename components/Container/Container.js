@@ -3,6 +3,7 @@ import Head from 'next/head';
 import React from 'react';
 // eslint-disable-next-line object-curly-newline
 import { node, string, oneOfType, object, PropTypes } from 'prop-types';
+import '../../styles/global.scss';
 
 const Container = ({ children, title = 'App' }) => (
   <div>
