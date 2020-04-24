@@ -1,0 +1,43 @@
+@import '../../styles/utils/index.scss';
+
+.c-header {
+  display: flex;
+  width: 95%;
+  max-width: 1140px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &__brand {
+    color: $color-white;
+    font-size: 36px;
+    text-decoration: none;
+  }
+
+  &__search {
+    $size: 48px;
+
+    display: flex;
+    width: $size;
+    height: $size;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: rgba($color-botticelli, 0.3);
+    }
+  }
+
+  &__icon {
+    $size: 24px;
+
+    width: $size;
+    height: $size;
+    fill: $color-white;
+  }
+}
