@@ -13,7 +13,7 @@ class Jumbotron extends Component {
   }
 
   async componentDidMount() {
-    const url = 'http://www.omdbapi.com/?apikey=7b3dc42b&s=harry-potter';
+    const url = 'https://www.omdbapi.com/?apikey=7b3dc42b&s=harry-potter';
     const response = await fetch(url);
     const data = await response.json();
     this.setState({ items: data.Search, loading: false });
