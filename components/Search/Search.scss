@@ -1,0 +1,32 @@
+@import '../../styles/utils/index';
+
+.c-search {
+  &__title {
+    margin-bottom: 16px;
+    font-size: 44px;
+  }
+
+  &__input {
+    width: 560px;
+    max-width: 100%;
+    padding: 15px 25px;
+    border: 1px solid $color-botticelli;
+    background-color: transparent;
+    border-radius: 2px;
+    color: $color-botticelli;
+    transition: box-shadow 0.2s ease-in-out, width 0.4s ease-in-out;
+    will-change: box-shadow;
+
+    &:focus {
+      width: 100%;
+      box-shadow: 0 0 16px rgba($color-botticelli, 0.4);
+      outline: 0;
+    }
+  }
+
+  &__message {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+}
