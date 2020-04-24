@@ -1,5 +1,9 @@
 @import './libs/normalize';
+@import './utils/index';
 
 body {
+  background-color: $color-bunker;
+  color: $color-white;
   font-family: Rajdhani, sans-serif;
+  font-size: 18px;
 }
